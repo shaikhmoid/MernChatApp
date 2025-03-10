@@ -4,10 +4,8 @@ import NavBar from "./components/NavBar";
 import Home from "./components/Home";
 import Register from "./components/Register";
 import Login from "./components/Login";
-import Setting from "./components/Setting";
 import Profile from "./components/Profile";
 import { useAuth } from "./store/useAuth";
-import { Loader } from "lucide-react";
 import { Toaster } from "react-hot-toast";
 
 const App = () => {
