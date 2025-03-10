@@ -4,6 +4,7 @@ import User from "../model/user.model.js";
 export const authMiddleware = async (req, res, next) => {
   try {
     const token = req.cookies.token;
+    console.log(req.cookies);
 
     if (!token) {
       throw new Error("unAuthorize");
@@ -24,5 +25,6 @@ export const authMiddleware = async (req, res, next) => {
     next();
   } catch (error) {
     res.status(400).json({ message: "Invalid user md", error });
+    console.log(error);
   }
 };
