@@ -124,15 +124,15 @@ const Login = () => {
                   Loading...
                 </>
               ) : (
-                "Create Account"
+                "login"
               )}
             </button>
           </form>
 
           <div className="text-center">
             <p className="text-base-content/60">
-              Already have an account?{" "}
-              <Link to="/login" className="link link-primary">
+              Dont have an account?{" "}
+              <Link to="/register" className="link link-primary">
                 Sign in
               </Link>
             </p>
