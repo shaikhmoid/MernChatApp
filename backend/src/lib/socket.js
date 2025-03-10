@@ -7,7 +7,7 @@ const app = express();
 const server = http.createServer(app);
 
 const io = new Server(server, {
-  cors: { origin: ["https://mern-chat-app-nu-flame.vercel.app"] },
+  cors: { origin: ["https://localhost:5173"] },
 });
 
 const userSocketOnline = {};

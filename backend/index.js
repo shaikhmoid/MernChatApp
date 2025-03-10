@@ -13,7 +13,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
   cors({
-    origin: "https://mern-chat-app-nu-flame.vercel.app",
+    origin: "https://localhost:5173",
     credentials: true,
   })
 );
