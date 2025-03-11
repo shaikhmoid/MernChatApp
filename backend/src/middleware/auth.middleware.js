@@ -4,13 +4,12 @@ import User from "../model/user.model.js";
 export const authMiddleware = async (req, res, next) => {
   try {
     const token = req.cookies.token;
-    console.log(req.cookies);
 
     if (!token) {
       throw new Error("unAuthorize");
     }
 
-    const decoded = await jwt.verify(token, process.env.JWTSECRET);
+    const decoded = jwt.verify(token, process.env.JWTSECRET);
     if (!decoded) {
       throw new Error("unAuthorize user");
     }
