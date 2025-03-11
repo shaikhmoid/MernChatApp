@@ -3,7 +3,7 @@ import { Axios } from "../axios/Axios";
 import toast from "react-hot-toast";
 import io from "socket.io-client";
 
-const baseurl = "http://localhost:3000";
+const baseurl = "https://backend-8vfl6pkw8-moids-projects-41781b68.vercel.app";
 export const useAuth = create((set, get) => ({
   isAuthenticated: false,
   authUser: null,
