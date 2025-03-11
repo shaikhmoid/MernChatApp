@@ -7,7 +7,7 @@ const app = express();
 const server = http.createServer(app);
 
 const io = new Server(server, {
-  cors: { origin: ["https://shimmering-yeot-cbef93.netlify.app"] },
+  cors: { origin: ["https://mern-chat-app-g7gc.vercel.app"] },
 });
 
 const userSocketOnline = {};
