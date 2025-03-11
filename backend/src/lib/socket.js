@@ -7,7 +7,7 @@ const app = express();
 const server = http.createServer(app);
 
 const io = new Server(server, {
-  cors: { origin: ["https://kaleidoscopic-sopapillas-43d40f.netlify.app"] },
+  cors: { origin: ["https://shimmering-yeot-cbef93.netlify.app"] },
 });
 
 const userSocketOnline = {};

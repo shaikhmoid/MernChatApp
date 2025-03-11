@@ -13,7 +13,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
   cors({
-    origin: ["https://kaleidoscopic-sopapillas-43d40f.netlify.app"],
+    origin: ["https://shimmering-yeot-cbef93.netlify.app"],
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   })
